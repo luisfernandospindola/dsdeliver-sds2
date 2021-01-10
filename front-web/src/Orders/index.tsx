@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 
-import { fetchProducts, saveOrder } from 'front-web/src/Api.ts';
+import { fetchProducts, saveOrder } from '../api';
 import Footer from '../Footer';
 import { checkIsSelected } from './helpers';
 import OrderLocation from './OrderLocation';
