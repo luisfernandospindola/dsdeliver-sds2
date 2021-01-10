@@ -1,15 +1,15 @@
-import { useEffect, useState } from 'react'
-import { toast } from 'react-toastify'
+import { useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 
-import { fetchProducts, saveOrder } from '../api'
-import Footer from '../Footer'
-import { checkIsSelected } from './helpers'
-import OrderLocation from './OrderLocation'
-import OrderSummary from './OrderSummary'
-import ProductsList from './ProductsList'
-import StepsHeader from './StepsHeader'
-import './styles.css'
-import { OrderLocationData, Product } from './types'
+import { fetchProducts, saveOrder } from '../api';
+import Footer from '../Footer';
+import { checkIsSelected } from './helpers';
+import OrderLocation from './OrderLocation';
+import OrderSummary from './OrderSummary';
+import ProductsList from './ProductsList';
+import StepsHeader from './StepsHeader';
+import './styles.css';
+import { OrderLocationData, Product } from './types';
 
 function Orders() {
   const [products, setProducts] = useState<Product[]>([])
