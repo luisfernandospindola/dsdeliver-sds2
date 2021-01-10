@@ -67,7 +67,7 @@ function OrderLocation({ onChangeLocation }: Props) {
             onChange={value => handleChangeSelect(value as Place)}
           />
         </div>
-        <MapContainer
+        <MapContainer 
           center={address.position} 
           zoom={13}
           key={address.position.lat}
